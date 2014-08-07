@@ -175,7 +175,6 @@ class Mirror(object):
             "%(pip)s install -U %(extra_args)s --exists-action=w"
             " --download-cache=%(download_cache)s"
             " --build %(build_dir)s -f %(find_links)s"
-            " --no-use-wheel"
             " -r %(requirements_file)s")
         venv_format = (
             "virtualenv --clear --extra-search-dir=%(extra_search_dir)s"
